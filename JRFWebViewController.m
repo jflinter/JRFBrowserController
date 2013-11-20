@@ -52,7 +52,6 @@
     _progressView.progress = 0.0f;
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     self.refreshControl = refreshControl;
-    self.refreshControl.tintColor = [UIColor appTintColor];
     [self.refreshControl addTarget:self action:@selector(reload:) forControlEvents:UIControlEventValueChanged];
     [self.webView.scrollView addSubview:refreshControl];
 }
